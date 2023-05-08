@@ -1,4 +1,4 @@
-# Build an ML Pipeline for Short-Term Rental Prices in NYC
+# ML Pipeline for Short-Term Rental Prices in NYC
 
 [View Weights & Biases Project](https://wandb.ai/gianatmaja/nyc_airbnb?workspace=user-gianatmaja)
 
