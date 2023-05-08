@@ -8,6 +8,28 @@ include Mlflow, Weights & Biases, and Hydra.
 
 The structure of this repository is as follows:
 
+    .
+    ├── components/                          # Utilities & common functions
+    │  ├── get_data/                              
+    │  ├── test_regression_model/
+    │  ├── train_val_test_split/
+    │  ├── wandb_utils/
+    │  ├── conda.yml
+    │  ├── setup.py
+    ├── cookie-mlflow-step/                  # Baseline for new step creation
+    ├── images/                              # Images & plots
+    ├── src/                                 # Main pipeline codes          
+    │  ├── basic_cleaning/                              
+    │  ├── data_check/
+    │  ├── eda/
+    │  ├── train_random_forest/                  
+    ├── main.py                              # Main runner file
+    ├── config.yaml                          # Hydra config file
+    ├── conda.yml                            # Conda environment file
+    ├── environment.yml
+    ├── MLproject                            # Mlflow MLproject file               
+    └── README.md
+
 
 ## Running this project
 
