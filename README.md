@@ -16,9 +16,9 @@ The structure of this repository is as follows:
     │  ├── wandb_utils/
     │  ├── conda.yml
     │  ├── setup.py
-    ├── cookie-mlflow-step/                  # Baseline for new step creation
-    ├── images/                              # Images & plots
-    ├── src/                                 # Main pipeline codes          
+    ├── cookie-mlflow-step/                  # Template for new step or component
+    ├── images/                              # Images for documentation
+    ├── src/                                 # Main pipeline codes       
     │  ├── basic_cleaning/                              
     │  ├── data_check/
     │  ├── eda/
@@ -30,6 +30,9 @@ The structure of this repository is as follows:
     ├── MLproject                            # Mlflow MLproject file               
     └── README.md
 
+## Data
+
+The data used in this project is the NYC Airbnb Open Data, which could be obtained [here](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).
 
 ## Setup & Running the Project
 
@@ -149,3 +152,6 @@ The Pytest library was used to support the data validation process. The codes ca
 
 For more information on Pytest, kindly refer to their [documentation](https://docs.pytest.org/en/7.3.x/).
 
+## Current Release
+
+V1.0.0 was released on Tuesday, 9th May 2023.
