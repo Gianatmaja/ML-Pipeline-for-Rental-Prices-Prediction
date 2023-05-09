@@ -78,6 +78,8 @@ After the data is downloaded (using the codes defined in `components / get_data/
 
 Post training, the trained model will be exported, and will be used alongside the test data for model testing (`components / test_regression_model/`).
 
+The main tools that support the development of this pipeline are described below.
+
 ### MLflow Project
 
 Each step of the pipeline follows the format of an MLflow project, which in our case, contains the following files:
@@ -98,6 +100,8 @@ Weights & Biases has been incorporated into this project's codebase. Hence, all 
 ![W&B Dashboard](https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction/blob/main/images/wb_dashboard.png)
 
 The dashboard can further be used to compare metrics across runs, add tags to artifacts, view logs, etc.
+
+View the public dashboard for this project [here](https://wandb.ai/gianatmaja/nyc_airbnb?workspace=user-gianatmaja).
 
 For more information on Weights & Biases, kindly refer to their [documentation](https://docs.wandb.ai/).
 
