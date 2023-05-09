@@ -63,7 +63,7 @@ To run a specific step of the pipeline, run the following command:
 
 The pipeline DAG can be found below.
 
-![dag](https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction/tree/main/images/pipeline_dag.png)
+![dag](https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction/blob/main/images/ml_pipeline_dag.png))
 
 After the data is downloaded (using the codes defined in `components/get_data/`, it undergoes EDA (`src/eda/`) and data cleaning (`src/basic_cleaning/`). Then, the clean data will be validated (`src/data_check/`) and split into training and testing set (`components/train_val_test_split/`). The training set will further be used for model training (`src/train_random_forest/`). Post training, the trained model will be exported, and will be used alongside the test data for model testing (`components/test_regression_model/`).
 
