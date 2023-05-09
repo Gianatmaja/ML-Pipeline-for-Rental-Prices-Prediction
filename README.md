@@ -89,6 +89,8 @@ Each step of the pipeline follows the format of an MLflow project, which in our 
     
 The environment for a particular step is defined in `conda.yml`, whereas additional details (entry points, command to run, etc.) are defined in the `MLproject` file. The main codes for the particular step are in the `{script_name}.py` file.
 
+For more information on MLflow Projects, kindly refer to their [documentation](https://mlflow.org/docs/latest/projects.html).
+
 ### Weights & Biases
 
 Weights & Biases has been incorporated into this project's codebase. Hence, all runs and artifacts are logged and can be viewed in the W&B dashboard.
@@ -97,6 +99,25 @@ Weights & Biases has been incorporated into this project's codebase. Hence, all 
 
 The dashboard can further be used to compare metrics across runs, add tags to artifacts, view logs, etc.
 
+For more information on Weights & Biases, kindly refer to their [documentation](https://docs.wandb.ai/).
+
 ### Hydra Configuration File
 
+The inputs and configurations used throughout the pipeline are defined inside the Hydra configuration file (`config.yaml`). The values inside this file can be changed directly there, or through the command line, for example:
+
+```bash
+> mlflow run . \
+  -P steps=download,basic_cleaning \
+  -P hydra_options="modeling.random_forest.n_estimators=10 etl.min_price=50"
+```
+
+In the example above, the `n_estimators` and `min_price` values defined in the `config.yaml` file were not used in the run. Instead, the values in the bash command above were.
+
+For more information on Hydra, kindly refer to their [documentation]([https://docs.wandb.ai/](https://hydra.cc/docs/intro/)).
+
+### Pytest
+
+The Pytest library was used to support the data validation process. The codes can be found inside the `conftest.py` file, in the `src / data_check` directory.
+
+For more information on Pytest, kindly refer to their [documentation](https://docs.pytest.org/en/7.3.x/).
 
