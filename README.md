@@ -24,7 +24,7 @@ The structure of this repository is as follows:
     ├── main.py                              # Main runner file
     ├── config.yaml                          # Hydra config file
     ├── conda.yml                            # Conda environment file
-    ├── environment.yml
+    ├── environment.yml                      # Project environment file
     ├── MLproject                            # Mlflow MLproject file               
     └── README.md
 
