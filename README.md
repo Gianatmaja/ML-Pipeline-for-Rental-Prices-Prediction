@@ -31,14 +31,7 @@ The structure of this repository is as follows:
 
 ## Setup & Running the Project
 
-### Running Directly from GitHub Repo
-The project can be run directly from this GitHub repository using the following command:
-
-```bash
-> mlflow run https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction -v 1.0.0 
-```
-
-### Running Locally
+### Setup
 To create & activate the environment using the conda.yml file, run the following command:
 
 ```bash
@@ -46,6 +39,29 @@ To create & activate the environment using the conda.yml file, run the following
 > conda activate nyc_airbnb_dev
 ```
 
+### Connecting to Weights & Biases
+To connect to W&B, use the following command:
+
+```bash
+> wandb login {your_api_key}
+```
+
+### Running Directly from GitHub Repo
+The project can be run directly from this GitHub repository using the following command:
+
+```bash
+> mlflow run https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction -v 1.0.0 
+```
+
+Desired inputs to the pipeline can also be specified (with the help of Hydra package). For example, to use the `sample2.csv` data instead of `sample1.csv`, run the following command:
+
+```bash
+> mlflow run https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction \
+-v 1.0.0 \
+-P hydra_options="etl.sample='sample2.csv'"
+```
+
+### Running Locally
 To run the entire pipeline, use the following command:
 
 ```bash
@@ -58,13 +74,6 @@ To run a specific step of the pipeline, run the following command:
 > mlflow run . -P steps={step(s) name}
 ```
 
-### Connecting to Weights & Biases
-To connect to W&B, use the following command:
-
-
-```bash
-> wandb login {your_api_key}
-```
 
 ## ML Pipeline
 
