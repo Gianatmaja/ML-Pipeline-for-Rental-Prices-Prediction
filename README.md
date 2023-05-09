@@ -32,7 +32,7 @@ The structure of this repository is as follows:
 
 ## Data
 
-The data used in this project is the NYC Airbnb Open Data, which could be obtained [here](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).
+The data used in this project is the [NYC Airbnb Open Data](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).
 
 ## Setup & Running the Project
 
@@ -126,9 +126,7 @@ Weights & Biases has been incorporated into this project's codebase. Hence, all 
 
 ![W&B Dashboard](https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction/blob/main/images/wb_dashboard.png)
 
-The dashboard can further be used to compare metrics across runs, add tags to artifacts, view logs, etc.
-
-View the public dashboard for this project [here](https://wandb.ai/gianatmaja/nyc_airbnb?workspace=user-gianatmaja).
+The dashboard can further be used to compare metrics across runs, add tags to artifacts, view logs, etc. View the public dashboard for this project [here](https://wandb.ai/gianatmaja/nyc_airbnb?workspace=user-gianatmaja).
 
 For more information on Weights & Biases, kindly refer to their [documentation](https://docs.wandb.ai/).
 
