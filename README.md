@@ -1,8 +1,6 @@
 # ML Pipeline for Short-Term Rental Prices in NYC
 
-A reusable ML pipeline that is used to predict short-term rental prices in NYC, based on the property-related features. This pipeline supports
-the data cleaning, validation, preprocessing, EDA, as well as the model training and testing process. The main tools used to build this pipeline
-include Mlflow, Weights & Biases, and Hydra.
+A reusable ML pipeline that is used to predict short-term rental prices in NYC, based on the property-related features. This pipeline supports the data cleaning, validation, preprocessing, EDA, as well as the model training and testing process. The main tools used to build this pipeline include Mlflow, Weights & Biases, and Hydra.
 
 ## Project Structure
 
@@ -33,6 +31,15 @@ The structure of this repository is as follows:
 
 ## Running this project
 
+### Running Directly from GitHub Repo
+The project can be run directly from this GitHub repository using the following command:
+
+```bash
+> mlflow run https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction -v 1.0.0 
+```
+
+
+### Running locally
 To create & activate the environment using the conda.yml file, run the following command:
 
 ```bash
@@ -40,13 +47,7 @@ To create & activate the environment using the conda.yml file, run the following
 > conda activate nyc_airbnb_dev
 ```
 
-The project can be run directly from this GitHub repository using the following command:
-
-```bash
-> mlflow run https://github.com/Gianatmaja/ML-Pipeline-for-Rental-Prices-Prediction -v 1.0.0 
-```
-
-Alternatively, it can also be downloaded and run locally using the following command:
+To run the entire pipeline, use the following command:
 
 ```bash
 > mlflow run .
