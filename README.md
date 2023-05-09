@@ -1,6 +1,8 @@
 # ML Pipeline for Short-Term Rental Prices in NYC
 
-A reusable ML pipeline that is used to predict short-term rental prices in NYC, based on the property-related features. This pipeline supports the data cleaning, validation, preprocessing, EDA, as well as the model training and testing process.
+A reusable ML pipeline that is used to predict short-term rental prices in NYC, based on property-related features. This pipeline supports the data cleaning, validation, preprocessing, EDA, as well as the model training and testing process.
+
+The main tools used in the development of this pipeline include Mlflow, Weights & Biases, Hydra, and Pytest.
 
 ## Project Structure
 
@@ -108,8 +110,8 @@ To create a new step with these files directly present, the cookie-cutter templa
 step_name [step_name]: new_step_name
 script_name [run.py]: run.py
 job_type [my_step]: new_step_category
-short_description [My step]: what this step does
-long_description [An example of a step using MLflow and Weights & Biases]: what this step does, in more details
+short_description [My step]: briefly mention what this step does
+long_description [An example of a step using MLflow and Weights & Biases]: what this step does, with more details
 parameters [parameter1,parameter2]: input_parameter_1,input_parameter_2,input_parameter_3
 ```
 
@@ -127,7 +129,7 @@ View the public dashboard for this project [here](https://wandb.ai/gianatmaja/ny
 
 For more information on Weights & Biases, kindly refer to their [documentation](https://docs.wandb.ai/).
 
-### Hydra Configuration File
+### Hydra
 
 The inputs and configurations used throughout the pipeline are defined inside the Hydra configuration file (`config.yaml`). The values inside this file can be changed directly there, or through the command line, for example:
 
