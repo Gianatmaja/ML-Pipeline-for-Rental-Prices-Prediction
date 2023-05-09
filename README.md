@@ -100,6 +100,19 @@ Each step of the pipeline follows the format of an MLflow project, which in our 
     
 The environment for a particular step is defined in `conda.yml`, whereas additional details (entry points, command to run, etc.) are defined in the `MLproject` file. The main codes for the particular step are in the `{script_name}.py` file.
 
+To create a new step with these files directly present, the cookie-cutter template can be run by using the following command:
+
+```bash
+> cookiecutter cookie-mlflow-step -o src
+
+step_name [step_name]: new_step_name
+script_name [run.py]: run.py
+job_type [my_step]: new_step_category
+short_description [My step]: what this step does
+long_description [An example of a step using MLflow and Weights & Biases]: what this step does, in more details
+parameters [parameter1,parameter2]: input_parameter_1,input_parameter_2,input_parameter_3
+```
+
 For more information on MLflow Projects, kindly refer to their [documentation](https://mlflow.org/docs/latest/projects.html).
 
 ### Weights & Biases
