@@ -113,7 +113,7 @@ The inputs and configurations used throughout the pipeline are defined inside th
 
 In the example above, the `n_estimators` and `min_price` values defined in the `config.yaml` file were not used in the run. Instead, the values in the bash command above were.
 
-For more information on Hydra, kindly refer to their [documentation]([https://docs.wandb.ai/](https://hydra.cc/docs/intro/)).
+For more information on Hydra, kindly refer to their [documentation]([https://docs.wandb.ai/](https://hydra.cc/docs/intro/).
 
 ### Pytest
 
